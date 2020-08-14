@@ -4,7 +4,7 @@ export const getGifs = async( category ) =>{
 
     const cantidad = 10;
 
-    const peticion = 'http://api.giphy.com/v1/gifs/search';
+    const peticion = 'https://api.giphy.com/v1/gifs/search';
 
     const resp = await fetch(`${ peticion }?api_key=${ apiKey }&q=${ encodeURI(category) }&limit=${ cantidad }`);
 
