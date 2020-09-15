@@ -46,13 +46,10 @@ describe('Pruebas con <AddCategory/>', () =>{
         // se llamo una vez
         expect( setCategory ).toHaveBeenCalledTimes(1);
         //se llamo una funcion
-        expect( setCategory ).toHaveBeenCalledWith( expect.any(Function) );
+        //expect( setCategory ).toHaveBeenCalledWith( expect.any(Function) );
 
         //4. el valor del input debe de ser ''
         expect( input.props().value ).toBe('');
-
     })
-    
-    
-    
+      
 })
